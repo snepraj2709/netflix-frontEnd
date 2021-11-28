@@ -27,7 +27,7 @@ function Row({title, fetchUrl, isLargeRow}) {
         height: "390",
         width: "100%",
         playerVars: {
-            //https://developers.google.com/youtube/player-parameters
+            //https://developers.google.com/youtube/player-parameters//
             autoplay: 1,
         },
     };
@@ -53,7 +53,7 @@ function Row({title, fetchUrl, isLargeRow}) {
                 <img 
                 key={movie.id}
                 onClick={() => handleClick(movie)}
-                className={`row__poster $ {isLargeRow && "row__posterLarge"}`}
+                className={`row__poster ${isLargeRow && "row__posterLarge"}`}
                 src={`${base_url}${isLargeRow ? movie.poster_path: movie.backdrop_path}`}
                 alt={movie.name}
                 />
